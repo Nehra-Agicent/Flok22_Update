@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3sdp"
+    android:padding="@dimen/_2sdp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userIcon"
+        android:layout_width="@dimen/_47sdp"
+        android:layout_height="@dimen/_47sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:elevation="@dimen/_3sdp"
+        android:padding="@dimen/_2sdp"
+        app:layout_constraintBottom_toTopOf="@+id/checked_in_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/cornerRoundImage"
+        app:strokeColor="@color/black"
+        app:strokeWidth="@dimen/_1sdp"
+        tools:src="@tools:sample/avatars" />
+
+    <View
+        android:id="@+id/blackTransparency"
+        android:layout_width="@dimen/_47sdp"
+        android:layout_height="@dimen/_47sdp"
+        android:background="@drawable/user_icon_bg"
+        android:backgroundTint="@color/black_50"
+        android:elevation="@dimen/_3sdp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/checked_in_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/userIcon"
+        app:layout_constraintTop_toBottomOf="@+id/userIcon"
+        tools:text="Karan K. Mehra" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">Flok22</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <!--Intro Activity-->
+    <string name="slide_1_line_1">Expand your</string>
+    <string name="slide_1_line_2">Flok</string>
+    <string name="slide_1_line_3">Meet up with real people in real time,anywhere you go</string>
+
+    <string name="slide_2_line_1">Meaningful</string>
+    <string name="slide_2_line_2">Connections</string>
+    <string name="slide_2_line_3">No long meaningless messaging,real time meet ups while you are already out</string>
+
+    <string name="slide_3_line_1">Safe &amp;</string>
+    <string name="slide_3_line_2">Comfortable</string>
+    <string name="slide_3_line_3">22-minute timer gives you an out when you need it,and only share info you\'ve met</string>
+    <string name="skip">Skip</string>
+
+    <!--    Login Screen    -->
+
+    <string name="login_text">Log In</string>
+    <string name="enter_phone_num_text">Please enter your phone number.</string>
+    <string name="enter_num_hint">Enter Mobile Number</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="valid_phone_number">Please enter your phone number!</string>
+
+    <!--    OTP Screen  -->
+    <string name="otp_text">OTP Verification</string>
+    <string name="enter_otp_text">Please enter your OTP.</string>
+    <string name="resend_question">Didn\'t receive OTP?</string>
+    <string name="resend">RESEND</string>
+
+    <!--Sign-Up Screen-->
+
+    <string name="signup">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="bio">Bio</string>
+    <string name="select_gender">Select</string>
+    <string name="gender">Gender</string>
+    <string name="date_format">mm/dd/yyyy</string>
+    <string name="date_of_birth">Date of birth</string>
+    <!--Gender Array -->
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="gender_list">
+        <item>Select</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="continue_bu">Continue</string>
+    <!--bottom sheet-->
+    <string name="check_in">Check in</string>
+    <string name="checked_in">Checked in</string>
+    <string name="distance_in_between">Distance: %1$s Km from you</string>
+    <string name="address">Address: %1$s</string>
+    <string name="place_name">Place Name: %1$s</string>
+    <string name="people_count">Total checked-In %1$s</string>
+
+    <!--    Chat Fragment-->
+    <string name="chat_heading">Message</string>
+
+    <!--    History Fragment-->
+    <string name="history_heading">Missed Connections</string>
+
+    <!--    Notification Fragment-->
+    <string name="notification_heading">Notification</string>
+
+    <!--    Profile Fragment-->
+    <string name="my_profile">My Profile</string>
+    <string name="private_account">Private Account</string>
+    <string name="blacklist">Blacklist</string>
+    <string name="share">Share</string>
+    <string name="blocked">Blocked List</string>
+    <string name="feedback">Feedback</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="delete_account_text">Are you sure, you want to delete your account?</string>
+    <string name="edit_profile">Edit</string>
+    <string name="sign_out">Log Out</string>
+    <!--Sign Out Dialog-->
+    <string name="signout_supporting_text">Are you sure, you want to Log Out?</string>
+    <string name="checkout_supporting_text">Are you sure, you want to Check-Out?</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="age">Age -</string>
+    <string name="ageInYears">%1$s years</string>
+    <string name="bio_hyphen">Bio -</string>
+    <string name="bio_intro">My name is Amanda R. and I belongs to San Diego.I am a motivational speaker.</string>
+    <string name="request_to_connect">Request To Connect</string>
+    <string name="coordinate_meeting_point">Coordinate Meeting Point</string>
+    <string name="request_user_name">Hii %1$s</string>
+    <string name="requested_user_name">%1$s wants to connect with you</string>
+    <string name="connected_with">You\'ve connected with \n<b>%1$s</b></string>
+    <string name="congratulation">Congratulation!</string>
+    <string name="times_up">Time\'s Up!</string>
+    <string name="oops">Oops!</string>
+    <string name="accept_msg">Accept to keep connected</string>
+    <string name="times_up_msg">Your Time\'s Up</string>
+    <string name="keep_connected_msg"><b>%1$s</b>\nWants to keep connected \nwith you!</string>
+    <string name="keep_connected_ques">Do you want to keep connected \nwith <b>%1$s</b></string>
+    <string name="timer">00:00s</string>
+    <string name="check_in_question">Trying to check in?</string>
+    <string name="near_places">Places near you</string>
+    <string name="at_venue">Must be at venue to Check-In.</string>
+    <string name="message_hint">Message…</string>
+    <string name="view_profile">View Profile</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="block">Block</string>
+    <string name="unblock">Unblock</string>
+    <string name="report">Report</string>
+    <string name="tap_profile">Tap a profile to send a connection request</string>
+    <string name="save">Save</string>
+    <string name="start_chatting_to_see_messages">Start chatting with your connections to see \nmessages.</string>
+    <string name="no_missed_connections">No missed connections!</string>
+    <string name="connecting">Request Sent</string>
+    <string name="check_out">Check Out</string>
+    <string name="at_same_place">%1$s and you were in the %2$s.</string>
+    <string name="message">Messages</string>
+    <string name="missed_connection">Missed \nConnections</string>
+    <string name="historical_data">Historical \nData</string>
+    <string name="no_internet_title">No Internet Connection</string>
+    <string name="no_internet_msg">Your internet connection is not active please turn on Wi-Fi/Cellular data and swipe down to refresh</string>
+    <string name="try_again">Swipe down to try again</string>
+    <string name="no_history_data">No historical data!</string>
+    <string name="rem_time">00:00s</string>
+    <string name="accept_request">Accept Request</string>
+    <string name="reject_request">Reject Request</string>
+    <string name="chat_now">Chat Now</string>
+    <string name="cancel_request">Cancel Request</string>
+    <string name="blocked_user">Blocked User</string>
+    <string name="message_counter">%1$s/22</string>
+    <string name="no_checked_in_user">No checked in user</string>
+    <string name="location_warning_msg">You are getting far from this location. You need to checkout before check in to the other places.</string>
+
+</resources>

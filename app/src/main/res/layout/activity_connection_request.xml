@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_10sdp"
+    tools:context=".ui.ConnectionRequestActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@color/white"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/placeNameConnect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/backButton"
+            app:layout_constraintTop_toTopOf="@id/backButton"
+            tools:text="Rahul veg Biryani sector 60 noida block A37 gate number 3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@id/buttonContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/green_bg"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="@dimen/_82sdp"
+                android:layout_height="@dimen/_82sdp"
+                android:layout_marginTop="@dimen/_31sdp"
+                android:background="@drawable/user_icon_bg"
+                android:elevation="@dimen/_2sdp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                app:layout_constraintStart_toStartOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/userIconConnect"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:elevation="@dimen/_3sdp"
+                android:padding="@dimen/_2sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/view8"
+                app:layout_constraintEnd_toEndOf="@+id/view8"
+                app:layout_constraintStart_toStartOf="@+id/view8"
+                app:layout_constraintTop_toTopOf="@+id/view8"
+                app:shapeAppearanceOverlay="@style/cornerRoundImage"
+                app:srcCompat="@drawable/user"
+                app:strokeColor="@color/white"
+                app:strokeWidth="@dimen/_2sdp" />
+
+            <TextView
+                android:id="@+id/userNameConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintEnd_toEndOf="@+id/view8"
+                app:layout_constraintStart_toStartOf="@+id/view8"
+                app:layout_constraintTop_toBottomOf="@+id/view8"
+                tools:text="Amanda Ryan" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/age"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userNameConnect" />
+
+            <TextView
+                android:id="@+id/userAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/ageInYears"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/age"
+                app:layout_constraintStart_toEndOf="@+id/age"
+                app:layout_constraintTop_toTopOf="@+id/age" />
+
+            <TextView
+                android:id="@+id/bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/bio_hyphen"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="@+id/age"
+                app:layout_constraintTop_toBottomOf="@+id/age" />
+
+            <TextView
+                android:id="@+id/bioUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="fill_horizontal"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/bio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bio"
+                app:layout_constraintTop_toTopOf="@+id/bio"
+                app:layout_constraintVertical_bias="0.0"
+                tools:text="@string/bio_intro" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nestedScrollView">
+
+        <Button
+            android:id="@+id/connectionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:letterSpacing="0"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/request_to_connect"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/connectingButton"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/accept_button"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:letterSpacing="0"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/connecting"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/handleRequestContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nestedScrollView">
+
+        <Button
+            android:id="@+id/acceptRequest"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/accept_button"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:letterSpacing="0"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/accept_request"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/rejectRequest"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F63030"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:letterSpacing="0"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/reject_request"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/acceptRequest" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/cancelRequest"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:backgroundTint="#F63030"
+        android:fontFamily="@font/inter_semibold"
+        android:letterSpacing="0"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/cancel_request"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContainer" />
+
+    <Button
+        android:id="@+id/startChat"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/accept_button"
+        android:letterSpacing="0"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/chat_now"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_16ssp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nestedScrollView"
+        tools:layout_editor_absoluteY="13dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/tab_selector"
+    android:gravity="center"
+    android:textSize="@dimen/_10sdp"
+    tools:text="@string/missed_connection"
+    android:textColor="@drawable/text_tab_selector" />

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/view_profile"
+        android:title="@string/view_profile"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/disconnect"
+        android:title="@string/disconnect"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/block"
+        android:title="@string/block"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/report"
+        android:title="@string/report"
+        app:showAsAction="never" />
+</menu>

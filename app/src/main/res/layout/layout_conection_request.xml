@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_round"
+    android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/connectionRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/request_user_name"
+        android:textColor="@color/dark_gray"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/optionBu"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/optionBu" />
+
+    <ImageButton
+        android:id="@+id/optionBu"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:background="@color/white"
+        android:src="@drawable/option_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/requestedUsername"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center_horizontal"
+        android:text="@string/requested_user_name"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/connectionRequest"
+        app:layout_constraintStart_toStartOf="@+id/connectionRequest"
+        app:layout_constraintTop_toBottomOf="@+id/connectionRequest" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userIconConnect"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:elevation="@dimen/_3sdp"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view8"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        app:shapeAppearanceOverlay="@style/cornerRoundImage"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/_2sdp"
+        tools:src="@tools:sample/avatars" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="@dimen/_82sdp"
+        android:layout_height="@dimen/_82sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/user_icon_bg"
+        android:backgroundTint="@color/base_color"
+        android:elevation="@dimen/_2sdp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestedUsername"
+        app:srcCompat="@drawable/orange_bg" />
+
+    <TextView
+        android:id="@+id/userNameConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="@+id/view8"
+        app:layout_constraintStart_toStartOf="@+id/view8"
+        app:layout_constraintTop_toBottomOf="@+id/view8"
+        tools:text="Amanda Ryan" />
+
+    <TextView
+        android:id="@+id/userAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="@+id/userNameConnect"
+        app:layout_constraintStart_toStartOf="@+id/userNameConnect"
+        app:layout_constraintTop_toBottomOf="@+id/userNameConnect"
+        tools:text="26" />
+
+    <ImageButton
+        android:id="@+id/rejectConnectionRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/userAge"
+        app:srcCompat="@drawable/cancel" />
+
+    <ImageButton
+        android:id="@+id/acceptConnectionRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/userAge"
+        app:srcCompat="@drawable/accept" />
+
+    <View
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/custom_bar"
+        app:layout_constraintEnd_toEndOf="@+id/acceptConnectionRequest"
+        app:layout_constraintStart_toStartOf="@+id/rejectConnectionRequest"
+        app:layout_constraintTop_toBottomOf="@+id/acceptConnectionRequest" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/location">
+
+    <fragment
+        android:id="@+id/location"
+        android:name="com.flok22.android.agicent.fragment.MapFragment"
+        android:label="MapFragment"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="com.flok22.android.agicent.fragment.UserProfileFragment"
+        android:label="UserProfileFragment"
+        tools:layout="@layout/fragment_user_profile" />
+
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.flok22.android.agicent.fragment.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/fragment_chat" />
+    <action
+        android:id="@+id/action_global_location"
+        app:destination="@id/location" />
+    <action
+        android:id="@+id/action_global_chat"
+        app:destination="@id/chat" />
+</navigation>

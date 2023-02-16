@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "554008612525",
+    "project_id": "flok22-97916",
+    "storage_bucket": "flok22-97916.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554008612525:android:100df8ee7b642791054024",
+        "android_client_info": {
+          "package_name": "com.flok22app.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554008612525-60mm95medoc5utosetc20csrt5booqpc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flok22app.android",
+            "certificate_hash": "929cbfe6571d1bdfe7eb3bb00d169b6954366c9d"
+          }
+        },
+        {
+          "client_id": "554008612525-nmtp5nd3ap7f9sc5839q5q6q9snjhq84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKc9EWElRRA5y_J_nLdlNFpwU_JqRvx0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554008612525-nmtp5nd3ap7f9sc5839q5q6q9snjhq84.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "554008612525-sm7l907jq4mvhmj41bh0h9nc6nuv79mr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.notification.FirebaseNotification"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

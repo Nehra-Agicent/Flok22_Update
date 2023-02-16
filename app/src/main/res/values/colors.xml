@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="black_75">#BF000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--    App color  -->
+    <color name="gray">#4F4F4F</color>
+    <color name="dark_gray">#2C2C2C</color>
+    <color name="base_color">#EC6F00</color>
+    <color name="base_color_outline">#BA5700</color>
+    <color name="grey">#AEAEAE</color>
+    <color name="skip_color">#141414</color>
+    <!--Bottom nav-->
+    <color name="bottom_nav_color">#5F758E</color>
+    <!--User Marker Color-->
+    <color name="user_location_marker">#02B7B3</color>
+    <color name="accept_button">#02B760</color>
+    <!--Switch Color    -->
+    <color name="switch_thumb_color">#00BC40</color>
+    <color name="thumb_unchecked">#FBFCFC</color>
+    <color name="track_unchecked">#BDC3C7</color>
+    <color name="switch_track_color">#8800EB42</color>
+
+</resources>
